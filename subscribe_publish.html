@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscribe and Publish</title>
+</head>
+<body>
+    <h1>Subscribe and Publish Page</h1>
+    <form action="/subscribe" method="post">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic"><br><br>
+        <label for="qos">QoS:</label>
+        <input type="number" id="qos" name="qos" min="0" max="2" value="0"><br><br>
+        <input type="submit" value="Subscribe">
+    </form>
+    
+    <form action="/publish" method="post">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic"><br><br>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message"><br><br>
+        <input type="submit" value="Publish">
+    </form>
+</body>
+</html>
